@@ -24,9 +24,9 @@ const steak = {
 	cooked: false,
 }
 
-const uncookedFood = [hamburger, zucchini, chickenBreast, corn, steak];
+let uncookedFood = [hamburger, zucchini, chickenBreast, corn, steak];
 
-const cookedFood = [];
+let cookedFood = [];
 
 function grill (currentObject) {
     // Modify the food so that it is cooked
@@ -36,5 +36,8 @@ function grill (currentObject) {
     cookedFood.push(currentObject);
 };
 
-console.log(grill (uncookedFood));
+for (let i = 0; i < uncookedFood.length; i++) {
+  grill(uncookedFood[i])
+}
+
 console.log(cookedFood);

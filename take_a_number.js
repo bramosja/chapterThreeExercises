@@ -1,3 +1,4 @@
+
 let bandNumber = 1;
 
 function bandOrder (bandName) {
@@ -6,3 +7,4 @@ function bandOrder (bandName) {
 }
 
 bandOrder ("Galactic Scum");
+bandOrder("Underdogs");
